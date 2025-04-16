@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>My code </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bgMusic" src="assets/music.mp3" loop autoplay></audio>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="settings">
+      <select id="modeSelect">
+        <option value="ai">Play vs AI</option>
+        <option value="pvp">2 Players</option>
+      </select>
+
+      <input type="text" id="player1Name" placeholder="Player 1 Name" />
+      <input type="text" id="player2Name" placeholder="Player 2 / AI Name" />
+
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <button id="resetScore">Reset Scores</button>
+    </div>
+
+    <div class="scores">
+      <span id="player1Score">Player 1: 0</span>
+      <span id="player2Score">AI: 0</span>
+    </div>
+
+    <div class="board" id="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+  </div>
+
+  <div class="message-screen" id="messageScreen">
+    <div class="message">
+      <p id="messageText">You Win!</p>
+      <button id="restartBtn">New Game</button>
+    </div>
+  </div>
+
+  <audio id="clickSound" src="assets/click.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
